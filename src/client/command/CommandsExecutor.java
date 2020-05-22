@@ -184,6 +184,13 @@ public class CommandsExecutor {
         levelCommandsCursor = new Pair<>((List<String>) new ArrayList<String>(), (List<String>) new ArrayList<String>());
         
         addCommand(new String[]{"help", "commands"}, HelpCommand.class);
+        // addCommand("shop", CodyShopCommand.class);
+        addCommand("gohenesys", GoHenesys.class);
+        addCommand("gorien", GoRien.class);
+        addCommand("goereve", GoEreve.class);
+        addCommand("levelupto", levelUpTo.class);
+        addCommand("whatdropsfrom", WhatDropsFromCommand.class);
+        addCommand("starterkit", StaterKitCommand.class);
         addCommand("droplimit", DropLimitCommand.class);
         addCommand("time", TimeCommand.class);
         addCommand("credits", StaffCommand.class);
@@ -219,7 +226,7 @@ public class CommandsExecutor {
     private void registerLv1Commands() {
         levelCommandsCursor = new Pair<>((List<String>) new ArrayList<String>(), (List<String>) new ArrayList<String>());
         
-        addCommand("whatdropsfrom", 1, WhatDropsFromCommand.class);
+        // addCommand("whatdropsfrom", 1, WhatDropsFromCommand.class);
         addCommand("whodrops", 1, WhoDropsCommand.class);
         addCommand("buffme", 1, BuffMeCommand.class);
         addCommand("goto", 1, GotoCommand.class);
@@ -253,6 +260,7 @@ public class CommandsExecutor {
         addCommand("item", 2, ItemCommand.class);
         addCommand("drop", 2, ItemDropCommand.class);
         addCommand("level", 2, LevelCommand.class);
+        addCommand("levelchar", 2, LeveCharacterlCommand.class);
         addCommand("levelpro", 2, LevelProCommand.class);
         addCommand("setslot", 2, SetSlotCommand.class);
         addCommand("setstat", 2, SetStatCommand.class);

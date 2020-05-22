@@ -120,7 +120,7 @@ public class Item implements Comparable<Item> {
     }
 
     public void setOwner(String owner) {
-        this.owner = owner;
+        // this.owner = owner;
     }
 
     public int getPetId() {
