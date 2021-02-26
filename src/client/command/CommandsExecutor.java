@@ -184,11 +184,12 @@ public class CommandsExecutor {
         levelCommandsCursor = new Pair<>((List<String>) new ArrayList<String>(), (List<String>) new ArrayList<String>());
         
         addCommand(new String[]{"help", "commands"}, HelpCommand.class);
-        // addCommand("shop", CodyShopCommand.class);
+        addCommand("shop", CodyShopCommand.class);
         addCommand("gohenesys", GoHenesys.class);
         addCommand("gorien", GoRien.class);
         addCommand("goereve", GoEreve.class);
         addCommand("levelupto", levelUpTo.class);
+        // addCommand("reborn", reborn.class); // DOES Not work yet
         addCommand("whatdropsfrom", WhatDropsFromCommand.class);
         addCommand("starterkit", StaterKitCommand.class);
         addCommand("droplimit", DropLimitCommand.class);
